@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="colorAppBarSurface" format="color" />
+    <attr name="colorBackgroundSurface" format="color" />
+    <attr name="cardBackgroundMain" format="color" />
+    <attr name="iconBackground" format="color" />
+
+    <!-- Customize your text here. -->
+    <attr name="tabTextColor" format="reference|color" />
+    <attr name="textColorBlack" format="reference|color" />
+    <attr name="textColorHint" format="reference|color" />
+    <attr name="textColorPrimary" format="reference|color" />
+    <attr name="textColorSecondary" format="reference|color" />
+    <attr name="textColorThird" format="reference|color" />
+    <attr name="textColorFourth" format="reference|color" />
+    <attr name="textColorWhite" format="reference|color" />
+
+
+    <declare-styleable name="TemplateView" tools:ignore="ResourceName">
+        <attr name="gnt_template_type" format="reference" />
+    </declare-styleable>
+
+
+</resources>

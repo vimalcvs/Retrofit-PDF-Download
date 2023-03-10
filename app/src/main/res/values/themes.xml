@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Platform.V21.Theme.MaterialFiles" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimaryDark">@color/system_window_scrim_compat</item>
+    </style>
+
+    <style name="Platform.Theme.MaterialFiles" parent="Platform.V21.Theme.MaterialFiles" />
+
+    <style name="Base.Theme.MaterialFiles" parent="Platform.Theme.MaterialFiles">
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.AppTheme.BottomSheetDialog</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.MaterialFiles.ActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.MaterialFiles.ActionBarPopup</item>
+        <item name="dropDownListViewStyle">@style/Widget.MaterialFiles.ListView.DropDown</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="minTouchTargetSize">0dp</item>
+        <item name="textInputStyle">?textInputOutlinedStyle</item>
+        <item name="popupMenuBackground">@drawable/bg_dialog</item>
+
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.MaterialFiles.MediumComponent
+        </item>
+        <item name="buttonBarButtonStyle">
+            @style/Widget.MaterialComponents.Button.TextButton.Dialog
+        </item>
+        <item name="materialCardViewStyle">@style/Widget.MaterialFiles.CardView</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+
+
+        <item name="cardBackgroundMain">@color/card_main_color</item>
+        <item name="android:colorBackground">?colorSurface</item>
+        <item name="colorBackgroundSurface">@color/color_background_surface</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary</item>
+        <item name="colorSecondary">@color/color_primary</item>
+        <item name="colorOnSecondary">?colorOnPrimary</item>
+        <item name="colorSecondaryVariant">?colorSecondary</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="android:windowBackground">?colorSurface</item>
+        <item name="colorAppBarSurface">?colorSurface</item>
+
+        <item name="textColorHint">@color/text_hint</item>
+        <item name="textColorPrimary">@color/text_primary</item>
+        <item name="textColorSecondary">@color/text_secondary</item>
+        <item name="textColorThird">@color/text_third</item>
+        <item name="textColorFourth">@color/text_fourth</item>
+
+        <item name="fontFamily">@string/roboto_regular</item>
+        <item name="android:fontFamily">@string/roboto_regular</item>
+    </style>
+
+    <style name="Theme.MaterialFiles" parent="Base.Theme.MaterialFiles" />
+
+
+</resources>

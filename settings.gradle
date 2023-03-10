@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Up Police"
+include ':app'

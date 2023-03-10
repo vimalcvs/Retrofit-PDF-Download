@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UP Police</string>
+    <string name="font_size_large">Large</string>
+    <string name="font_size_small">Small</string>
+    <string name="lbl_no_connection">No connection</string>
+    <string name="lbl_no_internet_connection">No Internet Connection</string>
+    <string name="lbl_no_result">No result</string>
+    <string name="lbl_retry">Retry</string>
+    <string name="lbl_tap_to_retry">Tap to retry</string>
+    <string name="no_category_found">Oops, No category found!!</string>
+    <string name="no_internet_text">No Internet Connection!</string>
+    <string name="no_post_found">Oops, no channel found!</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="roboto_regular">sans-serif</string>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

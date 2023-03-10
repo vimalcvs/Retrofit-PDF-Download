@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+apply from: "utils.gradle"
+
+android {
+    namespace 'com.vimalcvs.upgkhindi'
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.vimalcvs.upgkhindi"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 6
+        versionName "6.0.0"
+        buildConfigField 'String', 'API', toJavaCodeString(API)
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            manifestPlaceholders = [usesCleartextTraffic: "true"]
+
+            resValue "string", "admob_native", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "admob_banner", "ca-app-pub-3940256099942544/9214589741"
+            resValue "string", "admob_interstitial", "ca-app-pub-3940256099942544/1033173712"
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            manifestPlaceholders = [usesCleartextTraffic: "true"]
+
+            resValue "string", "admob_native", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "admob_banner", "ca-app-pub-3940256099942544/9214589741"
+            resValue "string", "admob_interstitial", "ca-app-pub-3940256099942544/1033173712"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+    implementation "com.google.android.material:material:1.9.0-alpha02"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.9'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.palette:palette:1.0.0'
+
+    implementation 'com.github.kk121:File-Loader:1.2'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+}

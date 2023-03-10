@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@string/roboto_regular</item>
+        <item name="fontFamily">@string/roboto_regular</item>
+    </style>
+
+
+    <style name="TextAppearanceCollapsed">
+        <item name="fontFamily">@string/roboto_medium</item>
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:fontFamily">@string/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+</resources>

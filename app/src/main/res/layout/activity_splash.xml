@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash">
+
+    <Space
+        android:id="@+id/space_iv_icon_top"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@+id/iv_file_manage_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="206.0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_file_manage_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/space_iv_icon_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_iv_icon_top"
+        app:shapeAppearanceOverlay="@style/circleImageView" />
+
+    <Space
+        android:id="@+id/space_iv_icon_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_file_manage_icon"
+        app:layout_constraintVertical_weight="283.0" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_size_large"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="?textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_iv_icon_bottom"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@string/font_size_small"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="?textColorThird"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/space_tv_content_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintWidth_percent="0.9" />
+
+
+    <ProgressBar
+        android:id="@+id/space_tv_content_bottom"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:progressDrawable="@drawable/progress_scale"
+        android:progressTint="@color/color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:layout_constraintVertical_weight="30.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
